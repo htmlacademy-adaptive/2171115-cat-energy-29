@@ -1,0 +1,114 @@
+.filter__list {
+  border: 0;
+  max-width: 570px;
+  border-bottom: 1px solid #d9d9d9;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding: 0 20px 15px;
+}
+
+.filter__item {
+  box-sizing: border-box;
+  display: flex;
+  padding: 0;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+  align-items: center;
+  white-space: nowrap;
+  margin-top: 12px;
+  margin-bottom: 5px;
+}
+
+.filter-label {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.filter-input {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 14px 15px 13px 15px;
+  line-height: 18px;
+  color: #444444;
+  margin-left: 13px;
+  border: 1px solid #e7e7e7;
+}
+
+.filter-data {
+  width: 100%;
+}
+
+.filter-list {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.filter__list-radio {
+  padding-top: 12px;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+
+.radio {
+  position: relative;
+  display: block;
+  padding-left: 45px;
+  height: 30px;
+}
+
+.radio__mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+.weight-input[type="radio"]:checked + .radio__mark::before {
+  position: absolute;
+  top: 8.3px;
+  left: 8.3px;
+  width: 13px;
+  height: 13px;
+  background-color: #68b738;
+  border-radius: 50%;
+  content: "";
+}
+
+.radio__label {
+  color: #444444;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.button--form {
+  width: 100%;
+  font-size: 16px;
+  line-height: 20px;
+  border: 0;
+  padding: 10px 44px;
+}
+
+.filter__subtext {
+  color: #000000;
+  text-align: center;
+  font-weight: 400;
+  line-height: 16px;
+  margin-top: 21px;
+  margin-bottom: 32px;
+}

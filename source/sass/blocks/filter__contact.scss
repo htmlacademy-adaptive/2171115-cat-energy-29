@@ -1,0 +1,64 @@
+.filter__contact {
+  border: none;
+  margin: 0 0 24px 0;
+  padding: 0;
+}
+
+.filter__title-wrap {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #000000;
+  padding: 0 28px 0 0;
+  margin: 0 0 35px 0;
+  position: relative;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form__contact {
+  display: flex;
+  gap: 13px;
+  height: 45px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.contact-label {
+  display: flex;
+  align-items: center;
+  min-width: max-content;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.filter-user {
+  flex-grow: 1;
+  border: 1px solid #e7e7e7;
+  padding: 14px 15px 13px 15px;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.title-line::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: #68b738;
+  top: 16px;
+  right: -20px;
+  width: 139px;
+}

@@ -1,0 +1,80 @@
+.examples {
+  background-color: #eaeaea;
+  padding-top: 27px;
+  padding-bottom: 34px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.examples__title {
+  color: #000000;
+  text-align: start;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  margin: 0 0 40px 0;
+}
+
+.examples__text {
+  margin: 0 0 20px 0;
+}
+
+.examples-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 26px;
+}
+
+.examples-stats__item {
+  position: relative;
+  box-sizing: border-box;
+  max-width: 124px;
+  width: 100%;
+  padding: 13px 10px 5px;
+  text-align: center;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  padding-bottom: 0;
+}
+
+.examples-stats-number {
+  color: #000000;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.examples-stats-description {
+  position: absolute;
+  font-size: 12px;
+  line-height: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 80px;
+  background: #eaeaea;
+  bottom: -21px;
+  margin: 0 auto;
+}
+
+.examples__price {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+  margin-bottom: 20px;
+}
+
+.examples__span {
+  color: #000000;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}

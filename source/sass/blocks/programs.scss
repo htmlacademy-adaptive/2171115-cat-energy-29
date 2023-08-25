@@ -1,0 +1,62 @@
+.programs {
+  padding: 0 20px;
+}
+
+.programs-card {
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.programs-card__title {
+  color: #000000;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-left: 70px;
+  margin-top: 7px;
+}
+
+.programs-card__text {
+  padding-bottom: 23px;
+  border-bottom: 1px solid #d9d9d9;
+  margin-top: 18px;
+}
+
+.programs-card__link {
+  color: #000000;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+}
+
+.programs-card__link::after {
+  content: " ";
+  position: absolute;
+  top: 7px;
+  right: -37px;
+  height: 10px;
+  width: 27px;
+  background-image: url("../../img/icon_arrow.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.programs-card__wrapp {
+  display: flex;
+  position: relative;
+}
+
+.programs-card__img {
+  position: absolute;
+}
+
+.programs-card__img2 {
+  position: absolute;
+}

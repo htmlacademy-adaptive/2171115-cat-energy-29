@@ -1,1 +1,47 @@
-// Начните писать стили здесь
+@import "../sass/common/global.scss";
+@import "./common/page__body";
+@import "./blocks/main-header.scss";
+@import "./blocks/main-container.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/site-list.scss";
+@import "./blocks/main-block.scss";
+@import "./blocks/button.scss";
+@import "./blocks/programs.scss";
+@import "./blocks/programs__list.scss";
+@import "./blocks/features.scss";
+@import "./blocks/examples.scss";
+@import "./blocks/page-footer.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/goods.scss";
+@import "./blocks/filter.scss";
+@import "./blocks/page-main.scss";
+@import "./blocks/filter__contact.scss";
+@import "./blocks/filter__message.scss";
+@import "./blocks/filter__checkbox.scss";
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../../fonts/lato/Lato-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../../fonts/oswald/oswaldregular.woff2") format("woff2");
+  font-display: swap;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

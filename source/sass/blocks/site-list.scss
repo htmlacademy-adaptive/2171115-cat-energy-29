@@ -1,0 +1,45 @@
+.site-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-list__item {
+  width: 320px;
+  height: 66px;
+  text-align: center;
+  position: relative;
+}
+
+.site-list__item::before {
+  content: "";
+  height: 1px;
+  width: 320px;
+  background-color: #e6e6e6;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.site-list__item::after {
+  content: "";
+  height: 1px;
+  width: 320px;
+  background-color: #e6e6e6;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.site-list__item a {
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000;
+  display: flex;
+  height: 66px;
+  justify-content: center;
+  align-items: center;
+}

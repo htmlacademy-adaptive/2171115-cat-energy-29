@@ -1,3 +1,16 @@
+.features {
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+    border-bottom: 1px solid#e6e6e6;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+    border: none;
+    margin-bottom: 69px;
+  }
+}
+
 .features__title {
   color: #000000;
   text-align: start;
@@ -6,48 +19,122 @@
   font-weight: 400;
   line-height: 40px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 45px;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 32px;
+    margin-top: 71px;
+  }
 }
 
 .features__list {
   margin: 40px 0 49px 0;
   list-style: none;
   padding: 0;
-}
 
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 246px 246px;
+    row-gap: 37px;
+    column-gap: 132px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 246px);
+    grid-template-rows: 280px;
+    row-gap: 37px;
+    column-gap: 78px;
+  }
+}
 
 .features__item {
   display: flex;
   min-height: 60px;
   margin-bottom: 20px;
   padding-left: 80px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 280px;
+    width: 246px;
+    padding-left: 0;
+    margin-bottom: 0;
+    display: block;
+  }
 }
 
 .features__text {
   margin: 0;
   display: flex;
   align-items: center;
+  position: relative;
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 151px;
+    max-width: 210px;
+  }
+}
+
+.features__number {
+  display: none;
+  font-family: "Oswald", sans-serif;
+  color: #f2f2f2;
+  font-size: 280px;
+  font-weight: 400;
+  line-height: 280px;
+  margin: -204px 0 0 90px;
+  position: relative;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .features__item:nth-child(1) {
   background-image: url("../../img/Group\ 1.svg");
   background-position: left center;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background-position: left 62px;
+  }
 }
 
 .features__item:nth-child(2) {
   background-image: url("../../img/Group\ 2.svg");
   background-position: left center;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background-position: left 62px;
+  }
 }
 
 .features__item:nth-child(3) {
   background-image: url("../../img/Group\ 3.svg");
   background-position: left center;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background-position: left 62px;
+  }
 }
 
 .features__item:nth-child(4) {
   background-image: url("../../img/Group\ 4.svg");
   background-position: left center;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background-position: left 62px;
+  }
 }

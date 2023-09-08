@@ -4,44 +4,45 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width , initial-scale=1">
   </head>
   <body class="page__body">
-    <header class="main-header">
-      <div class="main-header__container">
-        <div class="main-header__wrapper">
+    <header class="main-header main-header--bg">
+      <div class="main-header__wrapper">
+        <div class="logo__header">
           <a class="main-header__logo" href="index.html">
             <img src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
           </a>
           <a class="main-header__logo2" href="index.html">
             <img src="img/logo 2.svg" width="101" height="18" alt="Кэт Энерджи">
           </a>
-          <nav class="main-nav">
-            <button class="main-nav__toggle" type="button">
-              <span class="visually-hidden">Открыть меню</span>
-            </button>
-            <div class="main-nav__wrapper wrapp">
-              <ul class="main-nav__list site-list">
-                <li class="site-list__item site-list__item--active">
-                  <a href="index.html">
-                    Главная
-                  </a>
-                </li>
-                <li class="site-list__item">
-                  <a href="catalog.html">
-                    Каталог продукции
-                  </a>
-                </li>
-                <li class="site-list__item">
-                  <a href="form.html">
-                    Подбор программы
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </nav>
         </div>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="main-nav__wrapper wrapp">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a class="site-list__item-a" href="index.html">
+                  Главная
+                </a>
+              </li>
+              <li class="site-list__item site-list__item--active">
+                <a class=" site-list__item-a" href="catalog.html">
+                  Каталог продукции
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__item-a" href="form.html">
+                  Подбор программы
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
-    </header>
+  </header>
     <main class="main-container">
         <h1 class="catalog-title">Каталог продукции</h1>
         <section class="catalog">
@@ -241,7 +242,7 @@
                     <h3 class="catalog__description-title catalog__description-title--more">Показать еще 100500 товаров</h3>
                     <p class="catalog__text catalog__text--more">На самом деле вкусов гораздо больше!</p>
                   </div>
-                  <a class="button button--product" href="#">Показать все</a>
+                  <a class="button button--product button__product--more" href="#">Показать все</a>
               </li>
           </ul>
       </section>
@@ -293,7 +294,7 @@
     </main>
     <footer class="page-footer">
       <div class="contact-container">
-        <div class="contact-container__wrap">
+        <div class="contact-container__wrap wrap__grey">
           <p class="contact-block-invite">приглашаем<br> к&nbsp;сотрудничеству дилеров!</p>
           <address class="contact-block-street">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         </div>
@@ -304,7 +305,7 @@
       </div>
       <div class="footer-social">
         <a class="footer-social__img" href="index.html">
-          <img src="img/logo-footer.svg" width="128" height="24" alt="cat energy">
+          <img src="img/logo 2.svg" width="128" height="24" alt="cat energy">
         </a>
         <ul class="footer-social__list">
           <li class="footer-social-icon">

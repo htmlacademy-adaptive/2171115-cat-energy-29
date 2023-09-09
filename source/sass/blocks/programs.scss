@@ -1,11 +1,37 @@
 .programs {
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
 }
 
 .programs-card {
   background-color: #f2f2f2;
   padding: 20px;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+    padding: 77px 30px 53px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    margin-right: 80px;
+    padding: 41px 52px 53px 52px;
+    width: 570px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs-card:last-child {
+    margin-right: 0;
+  }
 }
 
 .programs-card__title {
@@ -18,12 +44,40 @@
   margin: 0;
   margin-left: 70px;
   margin-top: 7px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 73px;
+    margin-left: 152px;
+    margin-top: 36px;
+  }
 }
 
 .programs-card__text {
   padding-bottom: 23px;
   border-bottom: 1px solid #d9d9d9;
   margin-top: 18px;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    margin-top: 0;
+    margin-bottom: 48px;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 340px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 460px;
+  }
 }
 
 .programs-card__link {
@@ -34,6 +88,11 @@
   text-transform: uppercase;
   text-decoration: none;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: normal;
+  }
 }
 
 .programs-card__link::after {
@@ -46,6 +105,13 @@
   background-image: url("../../img/icon_arrow.svg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    width: 32px;
+    height: 12px;
+    right: -42px;
+    top: 9px;
+  }
 }
 
 .programs-card__wrapp {
@@ -55,8 +121,30 @@
 
 .programs-card__img {
   position: absolute;
+
+  @media (min-width: $tablet-width) {
+    top: 81px;
+    right: 63px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+    left: 0;
+  }
 }
 
 .programs-card__img2 {
   position: absolute;
+
+  @media (min-width: $tablet-width) {
+    top: 81px;
+    right: 63px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+    left: 0;
+  }
 }

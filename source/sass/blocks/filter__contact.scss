@@ -2,6 +2,14 @@
   border: none;
   margin: 0 0 24px 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+  }
 }
 
 .filter__title-wrap {
@@ -13,12 +21,28 @@
   padding: 0 28px 0 0;
   margin: 0 0 35px 0;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+  }
 }
 
 .input-wrapper {
   display: flex;
   flex-direction: column;
   gap: 14px;
+
+  @media (min-width: $tablet-width) {
+    gap: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    width: 100%;
+    gap: 81px;
+  }
 }
 
 .form__contact {
@@ -27,6 +51,14 @@
   height: 45px;
   justify-content: space-between;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 569px;
+  }
 }
 
 .contact-label {
@@ -39,6 +71,11 @@
   color: #444444;
   font-weight: 400;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: normal;
+  }
 }
 
 .filter-user {
@@ -51,6 +88,11 @@
   color: #444444;
   font-weight: 400;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: normal;
+  }
 }
 
 .title-line::after {
@@ -60,5 +102,5 @@
   background-color: #68b738;
   top: 16px;
   right: -20px;
-  width: 139px;
+  width: 93px;
 }

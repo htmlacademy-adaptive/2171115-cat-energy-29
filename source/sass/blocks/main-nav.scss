@@ -1,6 +1,9 @@
 .main-nav {
   position: relative;
-  padding-top: 14px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .main-nav__toggle {
@@ -13,6 +16,14 @@
   position: relative;
   height: 18px;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .main-nav__toggle::before {
@@ -30,9 +41,30 @@
   width: 320px;
   background-color: #ffffff;
   position: absolute;
-  right: 0;
-  top: 53px;
+  right: -20px;
+  top: 44px;
   box-sizing: border-box;
   display: none;
   z-index: 5;
+
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    position: relative;
+    min-width: 436px;
+    min-height: 36px;
+    flex-wrap: wrap;
+    left: 0;
+    top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 475px;
+  }
+}
+
+.wrapp {
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+  }
 }

@@ -1,10 +1,26 @@
 .filter__list {
   border: 0;
-  max-width: 570px;
   border-bottom: 1px solid #d9d9d9;
   margin-left: -20px;
   margin-right: -20px;
   padding: 0 20px 15px;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.filter__list:nth-child(1) {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    height: 196px;
+  }
 }
 
 .filter__item {
@@ -19,6 +35,28 @@
   white-space: nowrap;
   margin-top: 12px;
   margin-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
+}
+
+.weight__item {
+  @media (min-width: $tablet-width) {
+    height: 40px;
+    margin-top: 0;
+    margin-bottom: 13px;
+  }
+}
+
+.weight__item:last-child {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .filter-label {
@@ -26,6 +64,11 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: normal;
+  }
 }
 
 .filter-input {
@@ -34,11 +77,18 @@
   font-weight: 400;
   text-transform: uppercase;
   display: inline-block;
-  padding: 14px 15px 13px 15px;
+  padding: 14px 15px 13px 13px;
   line-height: 18px;
   color: #444444;
   margin-left: 13px;
   border: 1px solid #e7e7e7;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: normal;
+    box-sizing: border-box;
+    height: 52px;
+  }
 }
 
 .filter-data {
@@ -55,6 +105,17 @@
   padding-top: 12px;
   padding-bottom: 25px;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 23px 27px 27px 27px;
+    border: 1px solid #e7e7e7;
+    margin-bottom: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    padding: 24px 28px;
+  }
 }
 
 .radio {
@@ -62,6 +123,10 @@
   display: block;
   padding-left: 45px;
   height: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+  }
 }
 
 .radio__mark {
@@ -73,6 +138,11 @@
   border: 1px solid #cdcdcd;
   box-sizing: border-box;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .weight-input[type="radio"]:checked + .radio__mark::before {
@@ -84,6 +154,13 @@
   background-color: #68b738;
   border-radius: 50%;
   content: "";
+
+  @media (min-width: $tablet-width) {
+    top: 10.3px;
+    left: 10.3px;
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .radio__label {
@@ -94,6 +171,32 @@
   height: 30px;
   display: flex;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: normal;
+    height: 40px;
+  }
+}
+
+.select-filter__form {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 284px);
+    column-gap: 60px;
+    height: 52px;
+    margin-bottom: 72px;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 570px 245px;
+    column-gap: 80px;
+    padding: 0;
+    height: 52px;
+    margin-bottom: 79px;
+  }
 }
 
 .button--form {
@@ -102,6 +205,13 @@
   line-height: 20px;
   border: 0;
   padding: 10px 44px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: normal;
+    padding: 11px 44px;
+    height: 52px;
+  }
 }
 
 .filter__subtext {
@@ -111,4 +221,33 @@
   line-height: 16px;
   margin-top: 21px;
   margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 0 0;
+  }
+}
+
+
+.filter__wrapper {
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
+}
+
+.filter__inner {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 570px);
+    column-gap: 80px;
+    padding: 0;
+    margin-bottom: 70px;
+  }
 }

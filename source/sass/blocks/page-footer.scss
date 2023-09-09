@@ -1,13 +1,43 @@
 .page-footer {
   width: 320px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
 }
 
 .contact-container__wrap {
   display: flex;
   justify-content: space-around;
   padding: 16px 26px;
+
+  @media (min-width: $tablet-width) {
+    padding: 51px 70px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    padding: 60px 80px;
+    max-width: 565px;
+    top: 95px;
+    left: 110px;
+    z-index: 1;
+    background-color: #ffffff;
+  }
+}
+
+.wrap__grey {
   background-color: #f2f2f2;
+
+  @media (min-width: $desktop-width) {
+    background-color: #ffffff;
+  }
 }
 
 .contact-block-invite {
@@ -18,6 +48,16 @@
   line-height: 20px;
   text-transform: uppercase;
   margin: 21px  0 0 0;
+
+  @media (min-width: $tablet-width) {
+    max-width: 170px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .contact-block-street {
@@ -27,6 +67,12 @@
   font-size: 14px;
   font-style: normal;
   margin: 16px 0 0 7px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 160px;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .footer-map iframe {
@@ -34,12 +80,27 @@
   height: 362px;
   border: 0;
   margin-bottom: -4px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }
 
 .footer-social {
   display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 30px;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 66px 110px;
+  }
 }
 
 .footer-social__img,
@@ -50,6 +111,15 @@
   border-bottom: 1px solid #d9d9d9;
   list-style-type: none;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .footer-social-icon {
@@ -67,6 +137,13 @@
   text-decoration: none;
   padding-left: 20px;
   padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 163px;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .product-by-text {
@@ -75,4 +152,11 @@
   line-height: 20px;
   display: flex;
   align-items: center;
+}
+
+
+.contact-container {
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
 }

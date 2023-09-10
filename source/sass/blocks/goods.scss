@@ -18,6 +18,11 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 78px;
+    margin-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
   }
 }
 
@@ -30,11 +35,10 @@
   line-height: 24px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 18px;
     font-size: 36px;
     line-height: 36px;
     max-width: 380px;
-    margin-top: 0;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -50,6 +54,43 @@
   background-color: #68b738;
   top: 16px;
   right: -20px;
+
+  @media (min-width: $tablet-width) {
+    width: 320px;
+    top: 20px;
+    right: -30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 952px;
+    top: 20px;
+    right: -110px;
+  }
+}
+
+.wrap-title-line::after {
+  content: "";
+  width: 280px;
+  height: 1px;
+  position: absolute;
+  background-color: #68b738;
+  bottom: -36px;
+  left: 0;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #68b738;
+    top: 20px;
+    left: -70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+    left: -110px;
+  }
 }
 
 .goods__wrapper {

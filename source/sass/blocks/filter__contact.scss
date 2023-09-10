@@ -95,6 +95,49 @@
   }
 }
 
+.filter-user-email {
+  background-image: url("../../img/email-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 185px 12px;
+
+  @media (min-width: $tablet-width) {
+    background-position: 516px 14.5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: 456px 14.5px;
+  }
+}
+
+.filter-user-phone {
+  background-image: url("../../img/phone-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 168px 12px;
+
+  @media (min-width: $tablet-width) {
+    background-position: 495px 14.5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: 436px 14.5px;
+  }
+}
+
+.filter-user:hover {
+  outline: 1px solid #cdcdcd;
+  border: 0;
+}
+
+.filter-user:focus {
+  outline: 2px solid #444444;
+  border: 0;
+}
+
+.filter-user:focus:invalid {
+  outline: 2px solid #ff8282;
+  border: 0;
+}
+
 .title-line::after {
   content: "";
   position: absolute;
@@ -103,4 +146,35 @@
   top: 16px;
   right: -20px;
   width: 93px;
+
+  @media (min-width: $tablet-width) {
+    width: 146px;
+    right: -70px;
+    top: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 778px;
+    right: -110px;
+  }
+}
+
+.title-line::before {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: #68b738;
+  position: absolute;
+  left: -70px;
+  top: 24px;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+    left: -110px;
+  }
 }

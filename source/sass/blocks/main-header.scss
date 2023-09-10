@@ -48,3 +48,11 @@
   display: flex;
   justify-content: center;
 }
+
+.logo__header:hover .img__logo-header {
+  opacity: 0.8;
+}
+
+.logo__header:active .img__logo-header {
+  opacity: 0.6;
+}

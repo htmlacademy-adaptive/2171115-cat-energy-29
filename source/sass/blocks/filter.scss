@@ -15,6 +15,7 @@
 .filter__list:nth-child(1) {
   @media (min-width: $tablet-width) {
     margin-bottom: 72px;
+    height: 196px;
   }
 
   @media (min-width: $desktop-width) {
@@ -91,6 +92,21 @@
   }
 }
 
+.filter-input:hover {
+  outline: 1px solid #cdcdcd;
+  border: 0;
+}
+
+.filter-input:focus {
+  outline: 2px solid #444444;
+  border: 0;
+}
+
+.filter-input:focus:invalid {
+  outline: 2px solid #ff8282;
+  border: 0;
+}
+
 .filter-data {
   width: 100%;
 }
@@ -127,6 +143,10 @@
   @media (min-width: $tablet-width) {
     padding-left: 60px;
   }
+}
+
+.radio:hover .radio__mark {
+  border: 1px solid #bababa;
 }
 
 .radio__mark {

@@ -19,7 +19,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    padding: 71px 0 0 0;
+    padding: 56px 0 0 0;
     border: none;
   }
 }
@@ -40,7 +40,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    word-wrap: 202px;
+    width: 202px;
   }
 }
 
@@ -55,4 +55,11 @@
 
 .logo__header:active .img__logo-header {
   opacity: 0.6;
+}
+
+
+.img__logo-header {
+  @media (min-width: $desktop-width) {
+    width: 118px;
+  }
 }

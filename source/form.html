@@ -4,14 +4,22 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width , initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon-16x16.png" type="image/png">
+    <link rel="icon" href="img/favicon-32x32.png" type="image/png">
+    <link rel="icon" href="img/favicon-96x96.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page__body">
     <header class="main-header main-header--bg">
       <div class="main-header__wrapper">
         <div class="logo__header">
           <a class="main-header__logo" href="index.html">
-            <img src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/logo-pic-desktop.svg" width="70" height="59">
+              <source media="(min-width: 768px)" srcset="img/logo-pic-tablet.svg" width="60" height="50">
+              <img src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
+            </picture>
           </a>
           <a class="main-header__logo2" href="index.html">
             <img class="img__logo-header" src="img/logo 2.svg" width="101" height="18" alt="Кэт Энерджи">
@@ -150,7 +158,9 @@
       <div class="contact-container">
         <div class="contact-container__wrap wrap__grey">
           <p class="contact-block-invite">приглашаем<br> к&nbsp;сотрудничеству дилеров!</p>
-          <address class="contact-block-street">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          <address class="contact-block-street">ул. Большая Конюшенная, д. 19/8
+            <p>Санкт-Петербург</p>
+          </address>
         </div>
         <div class="footer-map">
           <iframe class="location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10163.299861321595!2d30.307236589214437!3d59.937500675908275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2s!4v1691739343261!5m2!1sru!2s" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">

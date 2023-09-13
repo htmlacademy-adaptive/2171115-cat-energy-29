@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon-16x16.png" type="image/png">
+    <link rel="icon" href="img/favicon-32x32.png" type="image/png">
+    <link rel="icon" href="img/favicon-96x96.png" type="image/png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page__body">
@@ -11,7 +15,11 @@
         <div class="main-header__wrapper">
           <div class="logo__header">
             <a class="main-header__logo" href="index.html">
-              <img src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/logo-pic-desktop.svg" width="70" height="59">
+                <source media="(min-width: 768px)" srcset="img/logo-pic-tablet.svg" width="60" height="50">
+                <img src="img/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
+              </picture>
             </a>
             <a class="main-header__logo2" href="index.html">
               <img class="img__logo-header" src="img/logo 2.svg" width="101" height="18" alt="Кэт Энерджи">
@@ -48,7 +56,11 @@
       <section class="main-block">
             <h2 class="main-block__title">Функциональное питание для котов</h1>
             <p class="main-block__subtitle">Занялся собой? Займись котом!</p>
-            <img class="main-block__img" src="img/index-can-mobile 1.png" alt="упаковка корма">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/index-can-desktop.png 1x, img/index-can-desktop@2x.png 2x" width="552" height="499">
+              <source media="(min-width: 768px)" srcset="img/index-can-tablet.png 1x,  img/index-can-tablet@2x.png 2x" width="709" height="609">
+              <img class="main-block__img" src="img/index-can-mobile 1.png" srcset="img/index-can-mobile 1.png 1x, img/index-can-mobile@2x.png 2x" alt="упаковка корма" width="280" height="270">
+            </picture>
             <a class="button button--main" href="form.html">Подобрать программу</a>
       </section>
       <section class="programs container">
@@ -56,7 +68,11 @@
         <ul class="programs__list">
           <li class="programs-card">
             <div class="programs-card__wrapp">
-              <img class="programs-card__img" src="./img/cat_back.svg" width="50" height="53" alt="кот">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="./img/cat_back.svg" width="100" height="106">
+                <source media="(min-width: 768px)" srcset="./img/cat_back.svg" width="200" height="211">
+                <img class="programs-card__img" src="./img/cat_back.svg" width="50" height="53" alt="кот">
+              </picture>
               <h3 class="programs-card__title">похудение</h3>
             </div>
             <p class="programs-card__text">
@@ -68,7 +84,11 @@
           </li>
           <li class="programs-card">
             <div class="programs-card__wrapp">
-              <img class="programs-card__img2" src="./img/cat_back2.svg" width="67" height="50" alt="кот">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="./img/cat_back2.svg" width="134" height="100">
+                <source media="(min-width: 768px)" srcset="./img/cat_back2.svg" width="268" height="200">
+                <img class="programs-card__img2" src="./img/cat_back2.svg" width="67" height="50" alt="кот">
+              </picture>
               <h3 class="programs-card__title">набор массы</h3>
             </div>
             <p class="programs-card__text">
@@ -102,30 +122,52 @@
         </ul>
       </section>
       <section class="examples">
-        <h2 class="examples__title">Живой пример</h2>
-        <div class="examples__wrapper">
-          <p class="examples__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-          <div class="examples-stats-wrapper">
-            <div class="examples-stats">
-              <div class="examples-stats__item">
-                <h3 class="examples-stats-number">5 кг</h3>
-                <p class="examples-stats-description">снижение веса</p>
+        <div class="examples__div">
+          <div class="examples__wrapper">
+            <h2 class="examples__title">Живой пример</h2>
+            <p class="examples__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+            <div class="examples-stats-wrapper">
+              <div class="examples-stats">
+                <div class="examples-stats__item">
+                  <h3 class="examples-stats-number">5 кг</h3>
+                  <p class="examples-stats-description">снижение веса</p>
+                </div>
+                <div class="examples-stats__item">
+                  <h3 class="examples-stats-number">60 дней</h3>
+                  <p class="examples-stats-description">затрачено времени</p>
+                </div>
               </div>
-              <div class="examples-stats__item">
-                <h3 class="examples-stats-number">60 дней</h3>
-                <p class="examples-stats-description">затрачено времени</p>
+              <div class="examples__price">
+                <span class="examples__span">Затраты на питание:</span>
+                <span class="examples__span">15 000 руб.</span>
               </div>
-            </div>
-            <div class="examples__price">
-              <span class="examples__span">Затраты на питание:</span>
-              <span class="examples__span">15 000 руб.</span>
             </div>
           </div>
-        </div>
-        <div class="slider">
-          <img src="img/cat1.png" width="280" height="256" alt="Котик до программы">
-          <img src="img/cat2.png" width="280" height="256" alt="Котик после программы">
-          <div class="slider__toggle"></div>
+          <div class="slider">
+            <h2 class="visually-hidden">изменения кота</h2>
+            <ul class="slider__list">
+              <li class="slider__item">
+                <div class="slider__item-div-1">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/fat-cat-tablet.png 1x, img/fat-cat-tablet@2x.png 2x" width="560" height="512">
+                    <img class="slider__pic-1" src="img/fat-cat.png" srcset="img/fat-cat.png 1x, img/fat-cat@2x.png 2x" alt="толстый кот"width="280" height="256">
+                  </picture>
+                </div>
+              </li>
+              <li class="slider__item">
+                <div class="slider__item-div-2">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/lean-cat-tablet.png 1x, img/lean-cat-tablet@2x.png 2x" width="560" height="512">
+                    <img class="slider__pic-2" src="img/lean-cat.png" srcset="img/lean-cat.png 1x, img/lean-cat@2x.png 2x" alt="худой кот"width="280" height="256">
+                  </picture>
+                </div>
+              </li>
+            </ul>
+            <button class="slider__button" type="button">
+              <span class="visually-hidden">Управление влево или вправо</span>
+              <svg class="slider__button--icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none"><rect width="38" height="38" x="1" y="1" fill="#fff" rx="19"/><g fill="#666"><path d="m16 11-8 9 8 9V11ZM32 20l-8-9v18l8-9Z"/></g><rect width="38" height="38" x="1" y="1" stroke="#666" stroke-width="2" rx="19"/></svg>
+            </button>
+          </div>
         </div>
       </section>
     </main>
@@ -133,7 +175,9 @@
       <div class="contact-container">
         <div class="contact-container__wrap">
           <p class="contact-block-invite">приглашаем<br>к сотрудничеству дилеров!</p>
-          <address class="contact-block-street">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          <address class="contact-block-street">ул. Большая<br> Конюшенная, д. 19/8
+            <p>Санкт-Петербург</p>
+          </address>
         </div>
         <div class="footer-map">
           <iframe class="location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10163.299861321595!2d30.307236589214437!3d59.937500675908275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2s!4v1691739343261!5m2!1sru!2s" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">

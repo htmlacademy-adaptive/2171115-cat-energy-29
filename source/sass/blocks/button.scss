@@ -26,10 +26,16 @@
   @media (min-width: $tablet-width) {
     margin-left: 90px;
     max-width: 244px;
+    margin-top: -584px;
+    max-height: 54px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 80px;
+    margin-top: 0;
+    padding: 17px 10px;
+    max-width: 224px;
   }
 }
 

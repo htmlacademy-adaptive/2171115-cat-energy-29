@@ -5,20 +5,20 @@
   font-weight: 400;
   line-height: 36px;
   margin: 0;
-  padding: 27px 10px 41px 18px;
+  padding: 27px 10px 41px 20px;
   border-bottom: 1px solid #ebebeb;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
     padding-top: 66px;
-    padding-bottom: 163px;
+    padding-bottom: 84px;
     padding-left: 30px;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 75px 0 165px 110px;
+    padding: 75px 0 164px 110px;
   }
 }
 
@@ -67,10 +67,11 @@
   border-bottom: 1px solid #ebebeb;
 
   @media (min-width: $tablet-width) {
-    background-color: #f2f2f2;
+    background: linear-gradient(to top, #f2f2f2 82.7%, #ffffff 30%);
     border: none;
-    padding: 39px 36px;
+    padding: 0 36px;
     margin: 0;
+    min-height: 511px;
   }
 }
 
@@ -128,7 +129,7 @@
     padding: 11px 18px;
     font-size: 16px;
     margin-top: 4px;
-    margin-bottom: 0;
+    margin-bottom: 30px;
   }
 }
 
@@ -177,9 +178,11 @@
 
   @media (min-width: $tablet-width) {
     justify-content: space-around;
-    background-color: #ffffff;
     border: 2px solid #f2f2f2;
     padding-bottom: 0;
+    background: none;
+    min-height: 429px;
+    margin-top: 85px;
   }
 }
 
@@ -191,6 +194,7 @@
 
   @media (min-width: $tablet-width) {
     width: 155px;
+    margin-top: 131px;
   }
 }
 

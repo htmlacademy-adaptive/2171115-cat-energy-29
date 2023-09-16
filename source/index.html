@@ -11,6 +11,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page__body">
+    <svg style="display: none;">
+      <symbol id="main-header__logo2" xmlns="http://www.w3.org/2000/svg" width="101" height="18" fill="none"><g fill="#111" clip-path="url(#a)"><path d="M1.3 16.5A6.9 6.9 0 0 1 0 12.2V5.8a7 7 0 0 1 1.2-4.3C2 .5 3.4 0 5.4 0s3.2.5 4 1.3c.9 1 1.3 2.4 1.2 3.8v1.5H6.7V4.8c0-.5 0-1-.2-1.5L6 2.8l-.6-.1c-.6 0-1 .1-1.1.5C4 3.8 4 4.3 4 5v8.3l.3 1.6c.2.4.6.5 1.2.5.5 0 .8-.1 1-.5.2-.6.2-1.1.2-1.6v-1.9h3.9v1.5c0 1.4-.3 2.8-1.2 3.9-.8 1-2.1 1.4-4 1.4-2-.1-3.3-.6-4.1-1.6ZM15.3.2h4.5L23 17.8h-3.7l-.6-3.7h-2.6l-.6 3.7h-3.7L15.3.2Zm3.2 11.6-1-6.9-.9 6.9h1.9ZM25.8 3.2h-2.6v-3h9.4v2.9h-2.7v14.7h-4V3.2ZM39.8.2h7v1.9h-4.6v5.7h3.6v1.8h-3.6v6.5h4.5v1.7h-7V.2ZM48.8.2h1.7l5.1 11.6V.2h2v17.6h-1.5L51 5.8v12h-2.1V.2ZM60 .2h7v1.9h-4.5v5.7h3.6v1.8h-3.6v6.5H67v1.7h-7V.2ZM69 .2h3.7c1.4 0 2.9.3 4 1.1 1 .7 1.3 2 1.3 3.5 0 2.3-.7 3.7-2.2 4.1l2.5 8.8H76l-2.4-8.2h-2v8.2H69V.2Zm3.5 7.6c.9 0 1.7-.2 2.3-.6.5-.4.8-1.2.8-2.4 0-.5-.1-1.1-.3-1.6a2 2 0 0 0-.9-1C74 2 73.3 2 72.7 2h-1.1v5.8h1ZM81.2 16.5A7.6 7.6 0 0 1 80 12V6.2c0-1.2 0-2.3.4-3.4a4 4 0 0 1 1.5-2c.8-.5 1.9-.7 2.9-.6 1.6 0 2.8.3 3.5 1.2a5.8 5.8 0 0 1 1.1 3.8v.6h-2.3v-.5c0-.6 0-1.3-.2-2 0-.3-.3-.7-.6-1L84.9 2c-.6 0-1.1.1-1.6.5a1.7 1.7 0 0 0-.6 1.2 14 14 0 0 0-.2 2v6.6c0 1 .1 2 .5 3 .3.5 1 .8 1.9.8.4 0 .7 0 1-.2.4-.2.7-.4.9-.7.4-1 .6-2 .5-3.1v-1.3H85V9.1h4.6v8.7H88l-.2-2c-.2.6-.6 1.2-1.2 1.6-.6.4-1.3.6-2 .6a4 4 0 0 1-3.4-1.5ZM94.7 11.6 90.8.3h2.4l2.7 8.5L98.6.3h2.4l-3.9 11.3v6.2h-2.3v-6.2h-.1Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h101v18H0z"/></clipPath></defs></symbol>
+    </svg>
     <header class="main-header main-header--bg">
         <div class="main-header__wrapper">
           <div class="logo__header">
@@ -22,7 +25,9 @@
               </picture>
             </a>
             <a class="main-header__logo2" href="index.html">
-              <img class="img__logo-header" src="img/logo 2.svg" width="101" height="18" alt="Кэт Энерджи">
+              <svg class="main-header__logo2" width="101" height="18">
+                <use xlink:href="#main-header__logo2"></use>
+              </svg>
             </a>
           </div>
           <nav class="main-nav">
@@ -54,12 +59,12 @@
     <main class="main-container">
       <h1 class="visually-hidden">Функциональное питание для похудение домашних животных</h1>
       <section class="main-block">
-            <h2 class="main-block__title">Функциональное питание для котов</h1>
+            <h2 class="main-block__title">Функциональное питание для котов</h2>
             <p class="main-block__subtitle">Занялся собой? Займись котом!</p>
             <picture>
               <source media="(min-width: 1440px)" srcset="img/index-can-desktop.png 1x, img/index-can-desktop@2x.png 2x" width="552" height="499">
               <source media="(min-width: 768px)" srcset="img/index-can-tablet.png 1x,  img/index-can-tablet@2x.png 2x" width="709" height="609">
-              <img class="main-block__img" src="img/index-can-mobile 1.png" srcset="img/index-can-mobile 1.png 1x, img/index-can-mobile@2x.png 2x" alt="упаковка корма" width="280" height="270">
+              <img class="main-block__img" src="img/index-can-mobile.png" srcset="img/index-can-mobile.png 1x, img/index-can-mobile@2x.png 2x" alt="упаковка корма" width="280" height="270">
             </picture>
             <a class="button button--main" href="form.html">Подобрать программу</a>
       </section>
@@ -67,14 +72,7 @@
         <h2 class="visually-hidden">Программы питания</h2>
         <ul class="programs__list">
           <li class="programs-card">
-            <div class="programs-card__wrapp">
-              <picture>
-                <source media="(min-width: 1440px)" srcset="./img/cat_back.svg" width="100" height="106">
-                <source media="(min-width: 768px)" srcset="./img/cat_back.svg" width="200" height="211">
-                <img class="programs-card__img" src="./img/cat_back.svg" width="50" height="53" alt="кот">
-              </picture>
-              <h3 class="programs-card__title">похудение</h3>
-            </div>
+            <h3 class="programs-card__title">похудение</h3>
             <p class="programs-card__text">
               Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
             </p>
@@ -83,14 +81,7 @@
             </a>
           </li>
           <li class="programs-card">
-            <div class="programs-card__wrapp">
-              <picture>
-                <source media="(min-width: 1440px)" srcset="./img/cat_back2.svg" width="134" height="100">
-                <source media="(min-width: 768px)" srcset="./img/cat_back2.svg" width="268" height="200">
-                <img class="programs-card__img2" src="./img/cat_back2.svg" width="67" height="50" alt="кот">
-              </picture>
               <h3 class="programs-card__title">набор массы</h3>
-            </div>
             <p class="programs-card__text">
               Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
             </p>
@@ -150,7 +141,7 @@
                 <div class="slider__item-div-1">
                   <picture>
                     <source media="(min-width: 768px)" srcset="img/fat-cat-tablet.png 1x, img/fat-cat-tablet@2x.png 2x" width="560" height="512">
-                    <img class="slider__pic-1" src="img/fat-cat.png" srcset="img/fat-cat.png 1x, img/fat-cat@2x.png 2x" alt="толстый кот"width="280" height="256">
+                    <img class="slider__pic-1" src="img/fat-cat.png" srcset="img/fat-cat.png 1x, img/fat-cat@2x.png 2x" alt="толстый кот" width="280" height="256">
                   </picture>
                 </div>
               </li>
@@ -158,7 +149,7 @@
                 <div class="slider__item-div-2">
                   <picture>
                     <source media="(min-width: 768px)" srcset="img/lean-cat-tablet.png 1x, img/lean-cat-tablet@2x.png 2x" width="560" height="512">
-                    <img class="slider__pic-2" src="img/lean-cat.png" srcset="img/lean-cat.png 1x, img/lean-cat@2x.png 2x" alt="худой кот"width="280" height="256">
+                    <img class="slider__pic-2" src="img/lean-cat.png" srcset="img/lean-cat.png 1x, img/lean-cat@2x.png 2x" alt="худой кот" width="280" height="256">
                   </picture>
                 </div>
               </li>
@@ -185,32 +176,29 @@
         </div>
       </div>
       <div class="footer-social">
-        <a class="footer-social__img" href="index.html">
-          <img class="img__logo-header" src="img/logo 2.svg" width="128" height="24" alt="cat energy">
+        <a class="footer-social__img footer-social__line" href="index.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="128" height="25" fill="none"><path fill="#111" d="M1.6236 22.4574c-1.134-1.6759-1.697-3.6852-1.6022-5.7191V8.2617C-.116 6.2059.4117 4.161 1.5234 2.4404 2.625 1.1128 4.3275.5 6.831.5c2.5035 0 4.1057.6128 5.1071 1.7362 1.0872 1.4228 1.622 3.2045 1.5021 5.0042V9.283H8.5332V6.934a5.1159 5.1159 0 0 0-.3004-2.0425 1.4592 1.4592 0 0 0-.5783-.6274 1.4192 1.4192 0 0 0-.8236-.1896c-.701 0-1.2017.2042-1.402.7149a6.7194 6.7194 0 0 0-.3004 2.2468v10.9276a4.3005 4.3005 0 0 0 .4005 2.1447c.2003.5107.701.7149 1.402.7149s1.1015-.2042 1.3018-.7149a6.0738 6.0738 0 0 0 .3004-2.1447v-2.451h4.9069v2.0425c.1018 1.8291-.4298 3.6365-1.5021 5.1064C10.9366 23.8872 9.2342 24.5 6.8309 24.5c-2.4034-.1021-4.206-.7149-5.2073-2.0426ZM19.3483.8062h5.708l4.2059 23.2851h-4.6065l-.8011-4.9022H20.55l-.8011 4.9022h-4.7066L19.3483.8062Zm4.1057 15.3191-1.2016-9.0894-1.2017 9.0894h2.4033ZM32.7671 4.687h-3.4048V.8062h11.9166v3.7787h-3.4047v19.5064h-5.1071V4.687ZM50.3916.8062h8.8123v2.451H53.496v7.6596h4.6064v2.3489H53.496v8.5787h5.7079v2.349h-8.9124V.8062h.1001ZM61.8076.8062h2.2031l6.5091 15.4212V.8062h2.6036v23.2851h-2.0028l-6.6092-15.932v15.932h-2.7038V.8062ZM76.1276.8062h8.8123v2.451h-5.708v7.6596h4.6064v2.3489h-4.6064v8.5787h5.708v2.349h-8.8123V.8062ZM87.5435.806h4.6064c1.8121-.1276 3.6129.3765 5.1072 1.4298 1.1015.9192 1.6022 2.5532 1.6022 4.698 0 2.9616-.9013 4.7999-2.8039 5.4127l3.2044 11.6425h-3.1043l-3.0042-10.9276h-2.5035V23.989h-3.2044V.806h.1001Zm4.4061 10.0086c1.0324.0867 2.0614-.2028 2.9041-.817.6008-.5107.9013-1.532.9013-3.0639a6.7195 6.7195 0 0 0-.3005-2.2468c-.2254-.5207-.6124-.9513-1.1015-1.2255a4.4888 4.4888 0 0 0-2.2031-.4085H90.748v7.6595h1.2016v.1022ZM102.865 22.3554c-1.041-1.7857-1.53-3.8501-1.402-5.9234V8.6703c-.025-1.48.144-2.9568.501-4.3915.335-1.0722 1.003-2.0041 1.902-2.6554 1.118-.675 2.408-.995 3.705-.9191 2.103 0 3.606.5106 4.507 1.634 1.037 1.4834 1.532 3.2897 1.402 5.1064v.817h-3.004v-.7149a15.3727 15.3727 0 0 0-.201-2.5532c-.084-.5331-.372-1.0105-.801-1.3276a3.0496 3.0496 0 0 0-1.903-.5107c-.718-.0469-1.428.1706-2.002.6128a2.2992 2.2992 0 0 0-.566.7328 2.331 2.331 0 0 0-.235.9013c-.132.913-.199 1.8345-.201 2.7574v8.6809a9.4332 9.4332 0 0 0 .601 3.8808c.401.817 1.202 1.1234 2.403 1.1234.475.0603.956-.0239 1.384-.2419.428-.2181.782-.5603 1.02-.9836a9.5724 9.5724 0 0 0 .701-4.0851V14.9h-2.904v-2.3489h5.808v11.5404h-2.003l-.3-2.6553c-.263.8899-.81 1.6648-1.553 2.2014-.744.5366-1.643.8043-2.553.7603a4.9244 4.9244 0 0 1-2.406-.4675c-.751-.3565-1.404-.8977-1.9-1.575ZM119.989 15.921 115.082.9082h3.004l3.505 11.234 3.405-11.234H128l-4.907 15.0128v8.1702h-3.004V15.921h-.1Z"/></svg>
         </a>
-        <ul class="footer-social__list">
+        <ul class="footer-social__list footer-social__line">
           <li class="footer-social-icon">
             <a class="footer-social-icon_vk" href="https://vk.com/htmlacademy">
-              <svg class="footer-social-icon_vk" xmlns="http://www.w3.org/2000/svg" width="28" height="22"><path d="M1 5.34c0-.86.52-1.32 1.55-1.38l3.97.02c.26 0 .44.13.53.38.4 1.26.86 2.34 1.37 3.25.5.92 1.17 1.97 1.99 3.16.07.15.18.23.34.23.13 0 .22-.06.3-.18l.07-.28.03-4.35c0-.3-.07-.5-.23-.6-.15-.1-.43-.18-.83-.23-.32-.05-.48-.23-.48-.55 0-.07 0-.12.02-.15.38-1.09 1.44-1.63 3.2-1.63l1.5-.03c.67 0 1.23.16 1.67.48.44.32.67.82.67 1.5v5.72c.12.08.24.12.34.12.27 0 .5-.15.7-.45 1.95-2.58 3-4.31 3.17-5.18 0-.02.01-.06.05-.13.12-.25.33-.47.61-.65.29-.19.53-.31.75-.38a.55.55 0 0 1 .24-.05h4.13l.26.03c.36 0 .63.16.83.47.07.1.12.21.15.33a2.4 2.4 0 0 1 .06.55v.18a6.11 6.11 0 0 1-.94 2.2c-.5.78-1.15 1.62-1.93 2.53-.79.9-1.27 1.5-1.47 1.78-.16.2-.24.39-.24.56 0 .13.07.28.21.45l3.9 4.63c.2.26.31.56.31.88 0 .38-.16.7-.48.95-.32.25-.7.4-1.14.43l-.46.02h-4.04c-.02 0-.06 0-.11.02a.86.86 0 0 1-.1.01c-.4 0-.76-.16-1.1-.48-.12-.13-.96-1.12-2.5-2.97a1.39 1.39 0 0 0-.38-.32 38.47 38.47 0 0 0-.53 2.24l-.08.42a1.4 1.4 0 0 1-1.12 1.06l-.37.02h-2.61c-1.48 0-2.95-.63-4.41-1.9a19.3 19.3 0 0 1-3.96-4.95 47.51 47.51 0 0 1-3.28-7.05A1.92 1.92 0 0 1 1 5.34Zm16.01 6.51c-.37 0-.7-.1-1.01-.29a.9.9 0 0 1-.45-.79V5c0-.34-.1-.58-.27-.72-.18-.14-.49-.21-.93-.21l-1.52.05c-.76 0-1.34.12-1.73.37.78.36 1.17.93 1.17 1.71v4.43a1.5 1.5 0 0 1-.53 1.04c-.32.28-.68.42-1.07.42-.53 0-.94-.24-1.22-.73a26.16 26.16 0 0 1-3.1-5.63l-.23-.66-3.55-.02c-.23 0-.36.01-.38.03-.03.03-.04.1-.04.22 0 .15.01.3.05.48l.56 1.4c1.49 3.64 3.11 6.51 4.86 8.6 1.75 2.1 3.47 3.15 5.16 3.15h2.66c.1 0 .19-.03.24-.09.05-.06.1-.17.13-.34l.06-.25.5-2.21c.15-.3.27-.5.38-.6.2-.2.42-.28.69-.28.43 0 .86.24 1.3.73l2.27 2.71c.14.22.3.33.45.33h4.4c.53 0 .8-.13.8-.38a.47.47 0 0 0-.08-.25l-3.87-4.55c-.3-.35-.45-.73-.45-1.13 0-.4.14-.8.43-1.16.23-.34.68-.9 1.34-1.67.67-.78 1.25-1.51 1.75-2.19.5-.68.82-1.3.98-1.85l.08-.33a.37.37 0 0 1-.02-.16c0-.07-.01-.14-.03-.19h-4.18c-.27.1-.48.25-.64.45L21.8 6c-.45 1.16-1.6 2.94-3.5 5.36-.36.33-.8.5-1.3.5Z"/></svg>
               <span class="visually-hidden">мы в вк</span>
             </a>
           </li>
           <li class="footer-social-icon">
             <a class="footer-social-icon_ytb" href="https://www.youtube.com/user/htmlacademyru">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="22"><path d="m17.85 10.8-5.24-3.5a.65.65 0 0 0-1.01.55v6.98a.65.65 0 0 0 1.01.54l5.24-3.49a.65.65 0 0 0 0-1.09Zm-4.94 2.8V9.08l3.4 2.27-3.4 2.27Zm12.48-8.56a2.4 2.4 0 0 0-1.45-1.63C20.22 1.98 14.25 2 14 2s-6.22-.02-9.94 1.4a2.4 2.4 0 0 0-1.45 1.64 25.32 25.32 0 0 0-.61 6.3c0 3.26.33 5.22.61 6.3a2.4 2.4 0 0 0 1.45 1.63c3.72 1.43 9.69 1.4 9.94 1.4h.08c.75 0 6.31-.04 9.86-1.4a2.4 2.4 0 0 0 1.45-1.64c.28-1.07.61-3.03.61-6.3 0-3.25-.33-5.22-.61-6.29Zm-1.27 12.27a1.1 1.1 0 0 1-.65.74c-3.5 1.34-9.4 1.32-9.47 1.32-.07 0-5.98.02-9.47-1.32a1.09 1.09 0 0 1-.65-.74c-.27-1-.57-2.85-.57-5.97 0-3.12.3-4.97.57-5.97a1.1 1.1 0 0 1 .65-.74C8.03 3.29 13.93 3.3 14 3.3c.07 0 5.98-.02 9.47 1.32a1.1 1.1 0 0 1 .65.74c.27 1 .57 2.85.57 5.97 0 3.12-.3 4.96-.57 5.97Z"/></svg>
               <span class="visually-hidden">мы в утубе</span>
             </a>
           </li>
           <li class="footer-social-icon">
             <a class="footer-social-icon_tg" href="tg://resolve?domain=htmlacademy/">
-              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="22"><path fill-rule="evenodd" d="M23.46 3.15c.18.15.27.38.23.61l-2.63 15.76a.66.66 0 0 1-1.01.44l-7.88-5.25a.66.66 0 0 1-.15-.96l2.61-3.26-4.36 2.9a.66.66 0 0 1-.65.05L4.36 10.8a.66.66 0 0 1 .08-1.2l18.38-6.57a.66.66 0 0 1 .64.11ZM6.33 10.32l3.53 1.77 7.56-5.04a.66.66 0 0 1 .88.96l-4.8 6 6.43 4.3 2.28-13.66-15.88 5.67Z" clip-rule="evenodd"/></svg>
               <span class="visually-hidden">мы в тг</span>
             </a>
           </li>
         </ul>
         <a class="product-by" href="#">
-          <span class="product-by-text">HTML Academy</span>
-          <svg class="product-by-svg" xmlns="http://www.w3.org/2000/svg" width="27" height="34"><g clip-path="url(#a)"><path d="M13.64.02 13.5 0 0 1.4v24.61L13.5 34 27 26.01V1.41L13.64 0Zm11.6 25L13.5 31.96 1.77 25.02v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83V16.9l3.62-2.15v10.26Zm0-11.57L22 15.33l-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19L1.8 13.58l11.63-6.96 11.8 6.83Zm0-1.22L13.43 5.3 1.77 12.22V2.99L13.5 1.76 25.23 3v9.24Z"/></g><defs><clipPath id="a"><path d="M0 0h27v34H0z"/></clipPath></defs></svg>
+          <span class="product-by__text">HTML Academy</span>
+          <div class="product-by__svg"></div>
         </a>
       </div>
     </footer>

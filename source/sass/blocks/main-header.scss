@@ -47,13 +47,19 @@
 .main-header__logo2 {
   display: flex;
   justify-content: center;
+  width: 101px;
+  height: 18px;
+
+  @media (min-width: $desktop-width) {
+    width: 118px;
+  }
 }
 
-.logo__header:hover .img__logo-header {
+.logo__header:hover {
   opacity: 0.8;
 }
 
-.logo__header:active .img__logo-header {
+.logo__header:active {
   opacity: 0.6;
 }
 

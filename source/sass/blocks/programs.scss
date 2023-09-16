@@ -28,6 +28,39 @@
   }
 }
 
+.programs-card:first-child {
+  background-image: url("../../img/cat_back.svg");
+  background-repeat: no-repeat;
+  background-position: 21px 20px;
+
+  @media (min-width: $tablet-width) {
+    background-position: 445px 81px;
+    background-size: 200px 211px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: 52px 41px;
+    background-size: 100px 106px;
+  }
+}
+
+.programs-card:last-child {
+  background-image: url("../../img/cat_back2.svg");
+  background-repeat: no-repeat;
+  background-position: 13px 24px;
+  background-size: 67px 50px;
+
+  @media (min-width: $tablet-width) {
+    background-position: 411px 91px;
+    background-size: 268px 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: 33px 47px;
+    background-size: 134px 100px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .programs-card:last-child {
     margin-right: 0;
@@ -112,11 +145,6 @@
     right: -57px;
     top: 9px;
   }
-}
-
-.programs-card__wrapp {
-  display: flex;
-  position: relative;
 }
 
 .programs-card__img {

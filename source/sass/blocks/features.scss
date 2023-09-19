@@ -100,45 +100,45 @@
 }
 
 .features__item:nth-child(1) {
-  background-image: url("../../img/icon-leaf.svg");
+  background-image: url("../img/icon-leaf.svg");
   background-position: left center;
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
     background-position: left 40px;
-    background-image: url("../../img/icon-leaf-80px.svg");
+    background-image: url("../img/icon-leaf-80px.svg");
   }
 }
 
 .features__item:nth-child(2) {
-  background-image: url("../../img/icon-powder.svg");
+  background-image: url("../img/icon-powder.svg");
   background-position: left center;
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
     background-position: left 40px;
-    background-image: url("../../img/icon-powder-80px.svg");
+    background-image: url("../img/icon-powder-80px.svg");
   }
 }
 
 .features__item:nth-child(3) {
-  background-image: url("../../img/icon-eat.svg");
+  background-image: url("../img/icon-eat.svg");
   background-position: left center;
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
     background-position: left 40px;
-    background-image: url("../../img/icon-eat-80px.svg");
+    background-image: url("../img/icon-eat-80px.svg");
   }
 }
 
 .features__item:nth-child(4) {
-  background-image: url("../../img/icon-time.svg");
+  background-image: url("../img/icon-time.svg");
   background-position: left center;
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
     background-position: left 40px;
-    background-image: url("../../img/icon-time-80px.svg");
+    background-image: url("../img/icon-time-80px.svg");
   }
 }

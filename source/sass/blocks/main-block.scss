@@ -2,7 +2,7 @@
   position: relative;
   padding: 27px 20px 0;
   margin-bottom: 22px;
-  background-image: url("../../img/index-background-desktop\ 2.png");
+  background-image: url("../img/index-background-desktop\ 2.png");
   background-repeat: no-repeat;
   background-position: center top;
 
@@ -52,11 +52,11 @@
     top: -176px;
     right: 0;
     left: auto;
-    background-image: url("../../img/index-background-desktop.jpg");
+    background-image: url("../img/index-background-desktop.jpg");
   }
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/index-background-desktop@2x.jpg");
+    background-image: url("../img/index-background-desktop@2x.jpg");
     background-size: 720px auto;
   }
 }

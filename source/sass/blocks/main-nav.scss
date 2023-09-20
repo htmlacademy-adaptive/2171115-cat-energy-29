@@ -68,3 +68,11 @@
     background-color: transparent;
   }
 }
+
+.main-nav:hover .main-nav__wrapper {
+  display: block;
+}
+
+.main-nav:disabled .main-nav__wrapper {
+  display: none;
+}

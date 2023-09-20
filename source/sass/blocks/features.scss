@@ -1,4 +1,6 @@
 .features {
+  padding: 0 20px;
+
   @media (min-width: $tablet-width) {
     padding: 0 30px;
     border-bottom: 1px solid#e6e6e6;
@@ -79,7 +81,10 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 151px;
-    max-width: 210px;
+    font-size: 16px;
+    line-height: 24px;
+    max-height: 72px;
+    max-width: 247px;
   }
 }
 
@@ -90,7 +95,7 @@
   font-size: 280px;
   font-weight: 400;
   line-height: 280px;
-  margin: -204px 0 0 90px;
+  margin: -227px 0 0 120px;
   position: relative;
   z-index: 1;
 
@@ -100,45 +105,49 @@
 }
 
 .features__item:nth-child(1) {
-  background-image: url("../img/icon-leaf.svg");
-  background-position: left center;
+  background-image: url("../img/sprite.svg#icon-leaf");
+  background-position: -105px;
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    background-position: left 40px;
-    background-image: url("../img/icon-leaf-80px.svg");
+    background-position: left -65px;
+    background-size: 80px;
+    background-image: url("../img/sprite.svg#icon-leaf-80px");
   }
 }
 
 .features__item:nth-child(2) {
-  background-image: url("../img/icon-powder.svg");
-  background-position: left center;
+  background-image: url("../img/sprite.svg#icon-powder");
+  background-position: -105px;
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    background-position: left 40px;
-    background-image: url("../img/icon-powder-80px.svg");
+    background-position: left -65px;
+    background-size: 80px;
+    background-image: url("../img/sprite.svg#icon-powder-80px");
   }
 }
 
 .features__item:nth-child(3) {
-  background-image: url("../img/icon-eat.svg");
-  background-position: left center;
+  background-image: url("../img/sprite.svg#icon-eat");
+  background-position: -105px;
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    background-position: left 40px;
-    background-image: url("../img/icon-eat-80px.svg");
+    background-position: left -65px;
+    background-size: 80px;
+    background-image: url("../img/sprite.svg#icon-eat-80px");
   }
 }
 
 .features__item:nth-child(4) {
-  background-image: url("../img/icon-time.svg");
-  background-position: left center;
+  background-image: url("../img/sprite.svg#icon-time");
+  background-position: -105px;
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    background-position: left 40px;
-    background-image: url("../img/icon-time-80px.svg");
+    background-position: left -65px;
+    background-size: 80px;
+    background-image: url("../img/sprite.svg#icon-time-80px");
   }
 }

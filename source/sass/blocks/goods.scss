@@ -218,10 +218,10 @@
 
 .goods__gift {
   margin: 35px 0;
-  background-image: url("../../img/catalog/gift.png");
+  background-image: url("../img/catalog/gift.png");
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/catalog/gift@2x.png");
+    background-image: url("../img/catalog/gift@2x.png");
     background-size: 280px auto;
   }
 
@@ -238,7 +238,7 @@
 }
 
 .goods__gift-icon {
-  background-image: url("../../img/catalog/icon_gift.svg");
+  background-image: url("../img/catalog/icon_gift.svg");
   background-repeat: no-repeat;
   background-position: center 60px;
   width: 280px;

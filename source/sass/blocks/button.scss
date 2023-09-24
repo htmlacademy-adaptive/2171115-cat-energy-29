@@ -1,5 +1,5 @@
 .button {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial Narrow", sans-serif;
   display: block;
   text-align: center;
   padding: 11px 18px;
@@ -66,7 +66,7 @@
   }
 }
 
-.button__product--more {
+.button--product_more {
   background-color: #f2f2f2;
   color: inherit;
 
@@ -88,10 +88,25 @@
   }
 }
 
-.button__product--more:hover {
+.button--product_more:hover {
   background-color: #ebebeb;
 }
 
-.button__product--more:active {
+.button--product_more:active {
   color: rgba(68, 68, 68, 0.3);
+}
+
+.button--form {
+  width: 100%;
+  font-size: 16px;
+  line-height: 20px;
+  border: 0;
+  padding: 10px 44px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: normal;
+    padding: 11px 44px;
+    height: 52px;
+  }
 }

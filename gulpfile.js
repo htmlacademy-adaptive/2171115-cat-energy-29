@@ -52,7 +52,7 @@ const optimizeImages = () => {
     .pipe(gulp.dest('build/img'));
 }
 
- export const copyImages = () => {
+export const copyImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
     .pipe(gulp.dest('build/img'));
 }

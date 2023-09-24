@@ -15,7 +15,7 @@
 
 .filter__comment {
   color: #000000;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial Narrow", sans-serif;
   font-size: 24px;
   line-height: 26px;
   padding: 0;
@@ -24,14 +24,26 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 87px;
+    margin-bottom: 78px;
+  }
+}
+
+.filter__message-div {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
   }
 }
 
 .user-message {
   margin: 0;
   border: 1px solid #e7e7e7;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial Narrow", sans-serif;
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
@@ -49,46 +61,5 @@
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-  }
-}
-
-.legend-line::after {
-  content: "";
-  width: 159px;
-  height: 2px;
-  background-color: #68b738;
-  position: absolute;
-  top: 15px;
-  right: -20px;
-
-  @media (min-width: $tablet-width) {
-    right: -70px;
-    width: 476px;
-    top: 24px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1108px;
-    right: -110px;
-  }
-}
-
-.legend-line::before {
-  content: "";
-  width: 30px;
-  height: 2px;
-  background-color: #68b738;
-  position: absolute;
-  left: -70px;
-  top: 24px;
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
-
-  @media (min-width: $desktop-width) {
-    left: -110px;
-    width: 70px;
   }
 }

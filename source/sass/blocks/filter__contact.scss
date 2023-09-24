@@ -13,19 +13,20 @@
 }
 
 .filter__title-wrap {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial Narrow", sans-serif;
   font-size: 24px;
   line-height: 26px;
   font-weight: 400;
   color: #000000;
-  padding: 0 28px 0 0;
   margin: 0 0 35px 0;
   position: relative;
+  max-width: 230px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 76px;
+    max-width: fit-content;
   }
 }
 
@@ -33,19 +34,23 @@
   display: flex;
   flex-direction: column;
   gap: 14px;
+  width: 280px;
 
   @media (min-width: $tablet-width) {
     gap: 20px;
+    width: 768px;
+    padding: 0 70px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
-    width: 100%;
+    width: 1440px;
     gap: 81px;
+    padding: 0 110px;
   }
 }
 
-.form__contact {
+.input-wrapper__contact {
   display: flex;
   gap: 13px;
   height: 45px;
@@ -65,7 +70,7 @@
   display: flex;
   align-items: center;
   min-width: max-content;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial Narrow", sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: #444444;
@@ -82,7 +87,7 @@
   flex-grow: 1;
   border: 1px solid #e7e7e7;
   padding: 14px 15px 13px 15px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial Narrow", sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: #444444;
@@ -96,7 +101,8 @@
 }
 
 .filter-user-email {
-  background-image: url("../img/email-icon.svg");
+  background-image: url("../img/sprite.svg#email-icon");
+  background-size: 20px 20px;
   background-repeat: no-repeat;
   background-position: 185px 12px;
 
@@ -110,7 +116,8 @@
 }
 
 .filter-user-phone {
-  background-image: url("../img/phone-icon.svg");
+  background-image: url("../img/sprite.svg#phone-icon");
+  background-size: 20px 20px;
   background-repeat: no-repeat;
   background-position: 168px 12px;
 
@@ -136,45 +143,4 @@
 .filter-user:focus:invalid {
   outline: 2px solid #ff8282;
   border: 0;
-}
-
-.title-line::after {
-  content: "";
-  position: absolute;
-  height: 2px;
-  background-color: #68b738;
-  top: 16px;
-  right: -20px;
-  width: 93px;
-
-  @media (min-width: $tablet-width) {
-    width: 146px;
-    right: -70px;
-    top: 24px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 778px;
-    right: -110px;
-  }
-}
-
-.title-line::before {
-  content: "";
-  width: 30px;
-  height: 2px;
-  background-color: #68b738;
-  position: absolute;
-  left: -70px;
-  top: 24px;
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 70px;
-    left: -110px;
-  }
 }

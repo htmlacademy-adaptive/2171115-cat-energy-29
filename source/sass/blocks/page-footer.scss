@@ -7,7 +7,6 @@
   }
 }
 
-
 .contact-container__wrap {
   display: flex;
   justify-content: space-around;
@@ -28,7 +27,7 @@
   }
 }
 
-.wrap__grey {
+.contact-container__grey {
   background-color: #f2f2f2;
 
   @media (min-width: $desktop-width) {
@@ -38,7 +37,7 @@
 
 .contact-block-invite {
   color: #111111;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial Narrow", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -60,7 +59,7 @@
 .contact-block-street {
   line-height: 20px;
   font-weight: 400;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 14px;
   font-style: normal;
   margin: 0;
@@ -114,7 +113,7 @@
   }
 }
 
-.footer__social--wrapper {
+.page__footer-wrapper {
   background-color: #f2f2f2;
   display: flex;
   justify-content: center;
@@ -170,7 +169,7 @@
   position: relative;
 }
 
-.footer-social-icon_vk {
+.footer-social-icon__vk {
   mask-image: url("../img/sprite.svg#footer-social-icon_vk");
   background-color: #666666;
   width: 28px;
@@ -181,16 +180,16 @@
   margin-left: 13px;
 }
 
-.footer-social-icon_vk:hover {
+.footer-social-icon__vk:hover {
   background-color: #68b738;
 }
 
-.footer-social-icon_vk:active {
+.footer-social-icon__vk:active {
   opacity: 0.3;
   background-color: #68b738;
 }
 
-.footer-social-icon_ytb {
+.footer-social-icon__ytb {
   mask-image: url("../img/sprite.svg#footer-social-icon_ytb");
   background-color: #666666;
   width: 28px;
@@ -201,16 +200,16 @@
   margin-left: 13px;
 }
 
-.footer-social-icon_ytb:hover {
+.footer-social-icon__ytb:hover {
   background-color: #68b738;
 }
 
-.footer-social-icon_ytb:active {
+.footer-social-icon__ytb:active {
   opacity: 0.3;
   background-color: #68b738;
 }
 
-.footer-social-icon_tg {
+.footer-social-icon__tg {
   mask-image: url("../img/sprite.svg#footer-social-icon_tg");
   background-color: #666666;
   width: 28px;
@@ -221,11 +220,11 @@
   margin-left: 13px;
 }
 
-.footer-social-icon_tg:hover {
+.footer-social-icon__tg:hover {
   background-color: #68b738;
 }
 
-.footer-social-icon_tg:active {
+.footer-social-icon__tg:active {
   opacity: 0.3;
   background-color: #68b738;
 }

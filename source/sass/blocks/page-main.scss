@@ -1,31 +1,17 @@
-.page-main {
-  padding: 0 20px;
-  width: 280px;
-
-  @media (min-width: $tablet-width) {
-    padding: 0 30px;
-    width: 708px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1440px;
-    padding: 0;
-  }
-}
-
 .page-title-form {
   color: #000000;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial Narrow", sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
+  padding-left: 20px;
   margin-top: 28px;
   margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    padding-left: 40px;
+    padding-left: 70px;
     margin-top: 66px;
     margin-bottom: 54px;
   }
@@ -38,16 +24,17 @@
 
 .page-text {
   color: #000000;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial Narrow", sans-serif;
   text-transform: uppercase;
   text-align: start;
   margin: 0 0 28px 0;
+  padding-left: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 55px;
-    padding: 0 40px;
+    padding: 0 70px;
   }
 
   @media (min-width: $desktop-width) {

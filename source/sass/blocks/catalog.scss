@@ -1,11 +1,11 @@
 .catalog-title {
   color: #000000;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial Narrow", sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
   margin: 0;
-  padding: 27px 10px 41px 20px;
+  padding: 27px 0 41px;
   border-bottom: 1px solid #ebebeb;
 
   @media (min-width: $tablet-width) {
@@ -13,16 +13,16 @@
     line-height: 60px;
     padding-top: 66px;
     padding-bottom: 84px;
-    padding-left: 30px;
+    padding-left: 0;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 75px 0 84px 110px;
+    padding: 75px 0 84px 0;
   }
 }
 
-.catalog {
+.catalog__div {
   padding: 0 20px 0 20px;
 
   @media (min-width: $tablet-width) {
@@ -60,10 +60,6 @@
 .catalog__item {
   margin-bottom: 18px;
   display: block;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: -20px;
-  margin-right: -20px;
   border-bottom: 1px solid #ebebeb;
 
   @media (min-width: $tablet-width) {
@@ -75,15 +71,6 @@
   }
 }
 
-.catalog-card {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: column;
-  }
-}
 
 .catalog__description {
   @media (min-width: $tablet-width) {
@@ -102,7 +89,7 @@
 }
 
 .catalog__description-title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial Narrow", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -160,26 +147,12 @@
   }
 }
 
-.catalog-card-more {
-  position: relative;
-  grid-template-columns: 1fr;
-
-  @media (min-width: $tablet-width) {
-    justify-content: space-between;
-    border: 2px solid #f2f2f2;
-    padding-bottom: 0;
-    background: none;
-    min-height: 429px;
-    margin-top: 85px;
-  }
-}
-
-.catalog__link--more {
+.catalog__link-more {
   position: absolute;
   cursor: pointer;
   width: 30px;
   height: 30px;
-  left: 145px;
+  left: 125px;
 
   @media (min-width: $tablet-width) {
     width: 60px;
@@ -193,12 +166,12 @@
   }
 }
 
-.catalog__link--more::after {
+.catalog__link-more::after {
   transform: rotate(90deg);
 }
 
-.catalog__link--more::after,
-.catalog__link--more::before {
+.catalog__link-more::after,
+.catalog__link-more::before {
   content: "";
   position: absolute;
   width: 30px;

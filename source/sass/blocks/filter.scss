@@ -1,14 +1,50 @@
 .filter__list {
   border: 0;
   border-bottom: 1px solid #d9d9d9;
-  margin-left: -20px;
-  margin-right: -20px;
+  margin: 0;
   padding: 0 20px 15px;
 
   @media (min-width: $tablet-width) {
     border: none;
     margin: 0;
     padding: 0;
+  }
+}
+
+.filter__title {
+  display: flex;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 40px;
+  }
+}
+
+.filter__title::after {
+  content: "";
+  height: 15px;
+  border-bottom: 2px solid #68b738;
+  width: 10px;
+  flex-grow: 1;
+
+  @media (min-width: $tablet-width) {
+    height: 22px;
+  }
+}
+
+.filter__title::before {
+  content: "";
+  height: 15px;
+  border-bottom: 2px solid #68b738;
+  width: calc(50% - 160px);
+
+  @media (min-width: $tablet-width) {
+    height: 22px;
+    width: calc(50% - 354px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc(50% - 650px);
   }
 }
 
@@ -61,7 +97,7 @@
 }
 
 .filter-label {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial Narrow", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -73,7 +109,7 @@
 }
 
 .filter-input {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial Narrow", sans-serif;
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
@@ -185,7 +221,7 @@
 
 .radio__label {
   color: #444444;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial Narrow", sans-serif;
   font-size: 16px;
   text-transform: uppercase;
   height: 30px;
@@ -199,7 +235,9 @@
   }
 }
 
-.select-filter__form {
+.filter__inner-form {
+  padding: 0 20px;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 284px);
@@ -207,30 +245,16 @@
     height: 52px;
     margin-bottom: 72px;
     align-items: center;
+    padding: 0 70px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 570px 245px;
     column-gap: 80px;
-    padding: 0;
     height: 52px;
     margin-bottom: 79px;
-  }
-}
-
-.button--form {
-  width: 100%;
-  font-size: 16px;
-  line-height: 20px;
-  border: 0;
-  padding: 10px 44px;
-
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: normal;
-    padding: 11px 44px;
-    height: 52px;
+    padding: 0 110px;
   }
 }
 
@@ -247,19 +271,9 @@
   }
 }
 
-
-.filter__wrapper {
-  @media (min-width: $tablet-width) {
-    padding: 0 40px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0 110px;
-  }
-}
-
 .filter__inner {
   @media (min-width: $tablet-width) {
+    padding: 0 70px;
     margin-bottom: 65px;
   }
 
@@ -267,7 +281,22 @@
     display: grid;
     grid-template-columns: repeat(2, 570px);
     column-gap: 80px;
-    padding: 0;
     margin-bottom: 70px;
+    padding: 0 110px;
+  }
+}
+
+.filter__cover {
+  color: #000000;
+  font-family: "Oswald", "Arial Narrow", sans-serif;
+  font-size: 24px;
+  line-height: 26px;
+  padding: 0;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 57px;
   }
 }

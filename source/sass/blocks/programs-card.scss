@@ -1,0 +1,173 @@
+.programs-card {
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+    padding: 77px 30px 53px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    margin-right: 80px;
+    padding: 41px 52px 53px 52px;
+    width: 570px;
+  }
+}
+
+.programs-card:first-child {
+  background-image: url("../img/sprite.svg#cat_back");
+  background-repeat: no-repeat;
+  background-position: 21px 20px;
+  background-size: 50px 53px;
+
+  @media (min-width: $tablet-width) {
+    background-position: 445px 81px;
+    background-size: 200px 211px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: 52px 41px;
+    background-size: 100px 106px;
+  }
+}
+
+.programs-card:last-child {
+  background-image: url("../img/sprite.svg#cat_back2");
+  background-repeat: no-repeat;
+  background-position: 13px 24px;
+  background-size: 67px 50px;
+
+  @media (min-width: $tablet-width) {
+    background-position: 411px 91px;
+    background-size: 268px 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: 33px 47px;
+    background-size: 134px 100px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs-card:last-child {
+    margin-right: 0;
+  }
+}
+
+.programs-card__title {
+  color: #000000;
+  font-family: "Oswald", "Arial Narrow", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-left: 70px;
+  margin-top: 7px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 73px;
+    margin-left: 152px;
+    margin-top: 36px;
+  }
+}
+
+.programs-card__text {
+  padding-bottom: 23px;
+  border-bottom: 1px solid #d9d9d9;
+  margin-top: 18px;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    margin-top: 0;
+    margin-bottom: 52px;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 340px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 460px;
+    margin-bottom: 26px;
+  }
+}
+
+.programs-card__link {
+  color: #000000;
+  font-family: "Oswald", "Arial Narrow", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: normal;
+  }
+}
+
+.programs-card__link:hover .programs__narrow {
+  display: none;
+}
+
+.programs-card__link:hover .programs__narrow-big {
+  display: block;
+}
+
+.programs-card__link:active .programs__narrow {
+  display: none;
+}
+
+.programs-card__link:active.programs__narrow-big {
+  opacity: 0.3;
+}
+
+.programs-card__link:active {
+  opacity: 0.3;
+}
+
+.programs-card__img {
+  position: absolute;
+
+  @media (min-width: $tablet-width) {
+    top: 0;
+    right: 33px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+    left: 0;
+  }
+}
+
+.programs-card__img2 {
+  position: absolute;
+  left: -7px;
+
+  @media (min-width: $tablet-width) {
+    top: 0;
+    right: 0;
+    margin: 0;
+    left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+    left: 0;
+  }
+}

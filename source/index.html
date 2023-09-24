@@ -8,12 +8,14 @@
     <link rel="icon" href="img/favicon-16x16.png" type="image/png">
     <link rel="icon" href="img/favicon-32x32.png" type="image/png">
     <link rel="icon" href="img/favicon-96x96.png" type="image/png">
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page__body">
     <header class="main-header main-header--bg">
         <div class="main-header__wrapper">
-          <div class="logo__header">
+          <div class="logo">
             <a class="main-header__logo" href="index.html">
               <picture>
                 <source media="(min-width: 1440px)" srcset="img/logo-pic-desktop.svg" width="70" height="59">
@@ -25,24 +27,24 @@
               <img class="main-header__logo2" src="img/main-header__logo2.svg" width="101" height="18" alt="Название Кэт энерджи">
             </a>
           </div>
-          <nav class="main-nav">
+          <nav class="main-nav main-nav--nojs main-nav--closed">
             <button class="main-nav__toggle" type="button">
               <span class="visually-hidden">Открыть меню</span>
             </button>
-            <div class="main-nav__wrapper wrapp">
+            <div class="main-nav__wrapper">
               <ul class="main-nav__list site-list">
                 <li class="site-list__item site-list__item--active">
-                  <a class="site-list__item--white site-list__item-a" href="index.html">
+                  <a class=" site-list__item site-list__item--white site-list__item-a" href="index.html">
                     Главная
                   </a>
                 </li>
                 <li class="site-list__item">
-                  <a class="site-list__item--white site-list__item-a" href="catalog.html">
+                  <a class=" site-list__item site-list__item--white site-list__item-a" href="catalog.html">
                     Каталог продукции
                   </a>
                 </li>
                 <li class="site-list__item">
-                  <a class="site-list__item--white site-list__item-a" href="form.html">
+                  <a class=" site-list__item site-list__item--white site-list__item-a" href="form.html">
                     Подбор программы
                   </a>
                 </li>
@@ -50,9 +52,11 @@
             </div>
           </nav>
         </div>
+        <script src="./js/script.js"></script>
     </header>
-    <main class="main-container main-container__background">
-      <h1 class="visually-hidden">Функциональное питание для похудение домашних животных</h1>
+    <main class="main-container">
+      <div class="main-container__background-mobile main-container__background">
+        <h1 class="visually-hidden">Функциональное питание для похудение домашних животных</h1>
       <section class="main-block container">
             <h2 class="main-block__title">Функциональное питание для котов</h2>
             <p class="main-block__subtitle">Занялся собой? Займись котом!</p>
@@ -119,11 +123,11 @@
           </li>
         </ul>
       </section>
-      <section class="examples container">
-        <div class="examples__div">
+      <section class="examples ">
+        <div class="examples__div container">
           <div class="examples__wrapper">
             <h2 class="examples__title">Живой пример</h2>
-            <p class="examples__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+            <p class="examples__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат&nbsp;без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
             <div class="examples-stats-wrapper">
               <div class="examples-stats">
                 <div class="examples-stats__item">
@@ -163,11 +167,12 @@
             </ul>
             <button class="slider__button" type="button">
               <span class="visually-hidden">Управление влево или вправо</span>
-              <svg class="slider__button--icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none"><rect width="38" height="38" x="1" y="1" fill="#fff" rx="19"/><g fill="#666"><path d="m16 11-8 9 8 9V11ZM32 20l-8-9v18l8-9Z"/></g><rect width="38" height="38" x="1" y="1" stroke="#666" stroke-width="2" rx="19"/></svg>
+              <svg class="slider__button-icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none"><rect width="38" height="38" x="1" y="1" fill="#fff" rx="19"/><g fill="#666"><path d="m16 11-8 9 8 9V11ZM32 20l-8-9v18l8-9Z"/></g><rect width="38" height="38" x="1" y="1" stroke="#666" stroke-width="2" rx="19"/></svg>
             </button>
           </div>
         </div>
       </section>
+      </div>
     </main>
     <footer class="page-footer">
       <div class="contact-container">
@@ -180,33 +185,33 @@
           </div>
         </div>
         <div class="footer-map">
-          <iframe class="location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10163.299861321595!2d30.307236589214437!3d59.937500675908275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2s!4v1691739343261!5m2!1sru!2s" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          <iframe class="location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10163.299861321595!2d30.307236589214437!3d59.937500675908275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2s!4v1691739343261!5m2!1sru!2s" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
           </iframe>
         </div>
       </div>
-      <div class="footer__social--wrapper">
+      <div class="page__footer-wrapper">
         <div class="footer-social container">
           <a class="footer-social__img footer-social__line" href="index.html">
             <svg xmlns="http://www.w3.org/2000/svg" width="128" height="25" fill="none"><path fill="#111" d="M1.6236 22.4574c-1.134-1.6759-1.697-3.6852-1.6022-5.7191V8.2617C-.116 6.2059.4117 4.161 1.5234 2.4404 2.625 1.1128 4.3275.5 6.831.5c2.5035 0 4.1057.6128 5.1071 1.7362 1.0872 1.4228 1.622 3.2045 1.5021 5.0042V9.283H8.5332V6.934a5.1159 5.1159 0 0 0-.3004-2.0425 1.4592 1.4592 0 0 0-.5783-.6274 1.4192 1.4192 0 0 0-.8236-.1896c-.701 0-1.2017.2042-1.402.7149a6.7194 6.7194 0 0 0-.3004 2.2468v10.9276a4.3005 4.3005 0 0 0 .4005 2.1447c.2003.5107.701.7149 1.402.7149s1.1015-.2042 1.3018-.7149a6.0738 6.0738 0 0 0 .3004-2.1447v-2.451h4.9069v2.0425c.1018 1.8291-.4298 3.6365-1.5021 5.1064C10.9366 23.8872 9.2342 24.5 6.8309 24.5c-2.4034-.1021-4.206-.7149-5.2073-2.0426ZM19.3483.8062h5.708l4.2059 23.2851h-4.6065l-.8011-4.9022H20.55l-.8011 4.9022h-4.7066L19.3483.8062Zm4.1057 15.3191-1.2016-9.0894-1.2017 9.0894h2.4033ZM32.7671 4.687h-3.4048V.8062h11.9166v3.7787h-3.4047v19.5064h-5.1071V4.687ZM50.3916.8062h8.8123v2.451H53.496v7.6596h4.6064v2.3489H53.496v8.5787h5.7079v2.349h-8.9124V.8062h.1001ZM61.8076.8062h2.2031l6.5091 15.4212V.8062h2.6036v23.2851h-2.0028l-6.6092-15.932v15.932h-2.7038V.8062ZM76.1276.8062h8.8123v2.451h-5.708v7.6596h4.6064v2.3489h-4.6064v8.5787h5.708v2.349h-8.8123V.8062ZM87.5435.806h4.6064c1.8121-.1276 3.6129.3765 5.1072 1.4298 1.1015.9192 1.6022 2.5532 1.6022 4.698 0 2.9616-.9013 4.7999-2.8039 5.4127l3.2044 11.6425h-3.1043l-3.0042-10.9276h-2.5035V23.989h-3.2044V.806h.1001Zm4.4061 10.0086c1.0324.0867 2.0614-.2028 2.9041-.817.6008-.5107.9013-1.532.9013-3.0639a6.7195 6.7195 0 0 0-.3005-2.2468c-.2254-.5207-.6124-.9513-1.1015-1.2255a4.4888 4.4888 0 0 0-2.2031-.4085H90.748v7.6595h1.2016v.1022ZM102.865 22.3554c-1.041-1.7857-1.53-3.8501-1.402-5.9234V8.6703c-.025-1.48.144-2.9568.501-4.3915.335-1.0722 1.003-2.0041 1.902-2.6554 1.118-.675 2.408-.995 3.705-.9191 2.103 0 3.606.5106 4.507 1.634 1.037 1.4834 1.532 3.2897 1.402 5.1064v.817h-3.004v-.7149a15.3727 15.3727 0 0 0-.201-2.5532c-.084-.5331-.372-1.0105-.801-1.3276a3.0496 3.0496 0 0 0-1.903-.5107c-.718-.0469-1.428.1706-2.002.6128a2.2992 2.2992 0 0 0-.566.7328 2.331 2.331 0 0 0-.235.9013c-.132.913-.199 1.8345-.201 2.7574v8.6809a9.4332 9.4332 0 0 0 .601 3.8808c.401.817 1.202 1.1234 2.403 1.1234.475.0603.956-.0239 1.384-.2419.428-.2181.782-.5603 1.02-.9836a9.5724 9.5724 0 0 0 .701-4.0851V14.9h-2.904v-2.3489h5.808v11.5404h-2.003l-.3-2.6553c-.263.8899-.81 1.6648-1.553 2.2014-.744.5366-1.643.8043-2.553.7603a4.9244 4.9244 0 0 1-2.406-.4675c-.751-.3565-1.404-.8977-1.9-1.575ZM119.989 15.921 115.082.9082h3.004l3.505 11.234 3.405-11.234H128l-4.907 15.0128v8.1702h-3.004V15.921h-.1Z"/></svg>
           </a>
           <ul class="footer-social__list footer-social__line">
             <li class="footer-social-icon">
-              <a class="footer-social-icon_vk" href="https://vk.com/htmlacademy">
+              <a class="footer-social-icon__vk" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">мы в вк</span>
               </a>
             </li>
             <li class="footer-social-icon">
-              <a class="footer-social-icon_ytb" href="https://www.youtube.com/user/htmlacademyru">
+              <a class="footer-social-icon__ytb" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">мы в утубе</span>
               </a>
             </li>
             <li class="footer-social-icon">
-              <a class="footer-social-icon_tg" href="tg://resolve?domain=htmlacademy/">
+              <a class="footer-social-icon__tg" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">мы в тг</span>
               </a>
             </li>
           </ul>
-          <a class="product-by" href="#">
+          <a class="product-by" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="product-by__text">HTML Academy</span>
             <div class="product-by__svg"></div>
           </a>

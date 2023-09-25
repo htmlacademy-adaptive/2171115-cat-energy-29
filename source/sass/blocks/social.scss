@@ -1,0 +1,65 @@
+.social__icon {
+  margin-right: 26px;
+  width: 28px;
+  position: relative;
+}
+
+.social__icon-vk {
+  mask-image: url("../img/sprite.svg#social__icon-vk");
+  background-color: #666666;
+  width: 28px;
+  height: 22px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 13px;
+}
+
+.social__icon-vk:hover {
+  background-color: #68b738;
+}
+
+.social__icon-vk:active {
+  opacity: 0.3;
+  background-color: #68b738;
+}
+
+.social__icon-ytb {
+  mask-image: url("../img/sprite.svg#social__icon-ytb");
+  background-color: #666666;
+  width: 28px;
+  height: 22px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 13px;
+}
+
+.social__icon-ytb:hover {
+  background-color: #68b738;
+}
+
+.social__icon-ytb:active {
+  opacity: 0.3;
+  background-color: #68b738;
+}
+
+.social__icon-tg {
+  mask-image: url("../img/sprite.svg#social__icon-tg");
+  background-color: #666666;
+  width: 28px;
+  height: 22px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 13px;
+}
+
+.social__icon-tg:hover {
+  background-color: #68b738;
+}
+
+.social__icon-tg:active {
+  opacity: 0.3;
+  background-color: #68b738;
+}

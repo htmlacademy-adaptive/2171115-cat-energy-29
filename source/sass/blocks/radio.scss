@@ -1,0 +1,46 @@
+.radio {
+  position: relative;
+  display: block;
+  padding-left: 45px;
+  height: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+  }
+}
+
+.radio:hover .radio__mark {
+  border: 1px solid #bababa;
+}
+
+.radio__mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  box-sizing: border-box;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.radio__label {
+  color: #444444;
+  font-family: "Oswald", "Arial Narrow", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  height: 30px;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: normal;
+    height: 40px;
+  }
+}

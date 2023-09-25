@@ -31,7 +31,7 @@
   padding: 0 20px;
 }
 
-.logo {
+.main-header__logo-wrapper {
   display: flex;
   width: 190px;
   justify-content: space-between;
@@ -59,16 +59,10 @@
   }
 }
 
-.logo__header:hover {
+.main-header__logo-wrapper:hover {
   opacity: 0.8;
 }
 
-.logo__header:active {
+.main-header__logo-wrapper:active {
   opacity: 0.6;
-}
-
-.img__logo-header {
-  @media (min-width: $desktop-width) {
-    width: 118px;
-  }
 }

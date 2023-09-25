@@ -1,0 +1,27 @@
+.custom__checkbox-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 284px);
+    row-gap: 32px;
+    column-gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 245px);
+    column-gap: 80px;
+  }
+}
+
+.custom__checkbox-item {
+  height: 30px;
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    height: 30px;
+  }
+}

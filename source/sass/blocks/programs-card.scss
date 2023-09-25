@@ -139,35 +139,3 @@
 .programs-card__link:active {
   opacity: 0.3;
 }
-
-.programs-card__img {
-  position: absolute;
-
-  @media (min-width: $tablet-width) {
-    top: 0;
-    right: 33px;
-    margin: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 0;
-    left: 0;
-  }
-}
-
-.programs-card__img2 {
-  position: absolute;
-  left: -7px;
-
-  @media (min-width: $tablet-width) {
-    top: 0;
-    right: 0;
-    margin: 0;
-    left: auto;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 0;
-    left: 0;
-  }
-}

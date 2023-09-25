@@ -1,4 +1,4 @@
-.contact-container__wrapper {
+.footer__container-wrapper {
   @media (min-width: $desktop-width) {
     margin: 0 auto -400px;
     display: block;
@@ -7,7 +7,7 @@
   }
 }
 
-.contact-container__wrap {
+.footer__container-wrap {
   display: flex;
   justify-content: space-around;
   padding: 26px 20px;
@@ -27,7 +27,7 @@
   }
 }
 
-.contact-container__grey {
+.footer__container-grey {
   background-color: #f2f2f2;
 
   @media (min-width: $desktop-width) {
@@ -35,7 +35,7 @@
   }
 }
 
-.contact-block-invite {
+.footer__block-invite {
   color: #111111;
   font-family: "Oswald", "Arial Narrow", sans-serif;
   font-size: 16px;
@@ -56,7 +56,7 @@
   }
 }
 
-.contact-block-street {
+.footer__block-street {
   line-height: 20px;
   font-weight: 400;
   font-family: "Lato", "Arial", sans-serif;
@@ -77,7 +77,7 @@
   }
 }
 
-.contact-block-street p {
+.footer__block-street p {
   margin: 0;
 
   @media (min-width: $tablet-width) {
@@ -85,7 +85,7 @@
   }
 }
 
-.footer-map iframe {
+.footer__map iframe {
   width: 100%;
   height: 362px;
   border: 0;
@@ -96,7 +96,7 @@
   }
 }
 
-.footer-social {
+.footer__social-icon {
   display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
@@ -113,13 +113,13 @@
   }
 }
 
-.page__footer-wrapper {
+.footer__wrapper {
   background-color: #f2f2f2;
   display: flex;
   justify-content: center;
 }
 
-.footer-social__img {
+.footer__social-img {
   display: flex;
   justify-content: center;
   padding: 40px 0 20px;
@@ -137,15 +137,15 @@
   }
 }
 
-.footer-social__img:hover {
+.footer__social-img:hover {
   opacity: 0.8;
 }
 
-.footer-social__img:active {
+.footer__social-img:active {
   opacity: 0.6;
 }
 
-.footer-social__list {
+.footer__social-list {
   display: flex;
   justify-content: center;
   padding: 20px 0;
@@ -163,73 +163,7 @@
   }
 }
 
-.footer-social-icon {
-  margin-right: 26px;
-  width: 28px;
-  position: relative;
-}
-
-.footer-social-icon__vk {
-  mask-image: url("../img/sprite.svg#footer-social-icon_vk");
-  background-color: #666666;
-  width: 28px;
-  height: 22px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-left: 13px;
-}
-
-.footer-social-icon__vk:hover {
-  background-color: #68b738;
-}
-
-.footer-social-icon__vk:active {
-  opacity: 0.3;
-  background-color: #68b738;
-}
-
-.footer-social-icon__ytb {
-  mask-image: url("../img/sprite.svg#footer-social-icon_ytb");
-  background-color: #666666;
-  width: 28px;
-  height: 22px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-left: 13px;
-}
-
-.footer-social-icon__ytb:hover {
-  background-color: #68b738;
-}
-
-.footer-social-icon__ytb:active {
-  opacity: 0.3;
-  background-color: #68b738;
-}
-
-.footer-social-icon__tg {
-  mask-image: url("../img/sprite.svg#footer-social-icon_tg");
-  background-color: #666666;
-  width: 28px;
-  height: 22px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-left: 13px;
-}
-
-.footer-social-icon__tg:hover {
-  background-color: #68b738;
-}
-
-.footer-social-icon__tg:active {
-  opacity: 0.3;
-  background-color: #68b738;
-}
-
-.footer-social__line::after {
+.footer__social-line::after {
   content: "";
   height: 1px;
   width: 280px;
@@ -242,15 +176,7 @@
   }
 }
 
-.footer-social__img:hover .img__logo-header {
-  opacity: 0.8;
-}
-
-.footer-social__img:active .img__logo-header {
-  opacity: 0.6;
-}
-
-.product-by {
+.footer__social-by {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -269,7 +195,7 @@
   }
 }
 
-.product-by__text {
+.footer__social-text {
   font-size: 16px;
   color: #444444;
   line-height: 20px;
@@ -277,22 +203,22 @@
   align-items: center;
 }
 
-.product-by__svg {
-  mask-image: url("../img/sprite.svg#product-by__svg");
+.footer__social-svg {
+  mask-image: url("../img/sprite.svg#footer__social-svg");
   background-color: #666666;
   width: 27px;
   height: 34px;
 }
 
-.product-by:hover .product-by__svg {
+.footer__social-by:hover .footer__social-svg {
   background-color: #68b738;
 }
 
-.product-by:active {
+.footer__social-text:active {
   opacity: 0.3;
 }
 
-.contact-container {
+.footer__container {
   @media (min-width: $desktop-width) {
     position: relative;
   }
